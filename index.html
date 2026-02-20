@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My AR Test</title>
+    <meta charset="UTF-8">
+    <title>AR Furniture Test</title>
+    <script type="module" 
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <model-viewer
+      src="sofa.glb"
+      ios-src="sofa.usdz"
+      ar
+      ar-modes="webxr scene-viewer quick-look"
+      camera-controls
+      auto-rotate
+      shadow-intensity="1"
+      style="width: 100%; height: 90vh;">
+    </model-viewer>
   </body>
 </html>
